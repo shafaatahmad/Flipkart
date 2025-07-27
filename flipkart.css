@@ -50,6 +50,7 @@ body{
     height: 90px;
     display: flex;
     justify-content: center;
+    border: 1px solid black;
 
  }
  .imgbox{
@@ -61,7 +62,7 @@ body{
     width: 100%;
     
  }
- .imgbox h5{
+ .text{
     font-size: 0.2rem;
     font-weight: 600;
     font-family: sans-serif;
