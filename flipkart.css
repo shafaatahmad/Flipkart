@@ -91,3 +91,15 @@ body{
    font-size: 22px;
    box-sizing: border-box;
  }
+
+ .truncate {
+  white-space: nowrap;          /* Keep text in a single line */
+  overflow: hidden;             /* Hide overflow text */
+  text-overflow: ellipsis;      /* Show "..." at the end */
+  font-size: 11px;
+}
+
+.imageTitle{
+   display: flex;
+   flex-direction: row;
+}
