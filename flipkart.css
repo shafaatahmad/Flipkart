@@ -27,13 +27,13 @@ body{
     background-color: #f3f9fff3;
     border-radius: 8px;
     padding: 5px 10px;
+    width: 50%;
 }
 .searchbar input{
     background-color: #f3f9fff3;
     outline: none;
     padding: 10px 5px ;
     border: none;
-    width: 550px;
 }
 .textone{
    font-size: 0.75rem;
