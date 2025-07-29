@@ -33,16 +33,18 @@ body{
     padding: 6px 0px ;
     border: none;
     border-top-right-radius: 6px;
-    width: 70%;
+    width: 100%;
 }
+
+
 .textone{
-   font-size: 0.75rem;
+   font-size: 1rem;
+   
 }
  /* --------------------redirectbar------------------- */
 .container {
    width: 99% ;
    margin: auto;
-   height: 126px;
    background-color: rgb(255, 255, 255);
    display: flex;
    justify-content: center;
@@ -52,7 +54,7 @@ body{
 }
 .insidecontainer{
    height: 80%;
-   width: 10%;
+   width: 133px;
    background-color: rgb(255, 255, 255);
    display: flex;
    flex-direction: column;
@@ -124,7 +126,7 @@ body{
 
 }
 .itembox{
-   width: 11%;
+   width: 110px;
    box-sizing: border-box;
    display: flex;
    flex-direction: column;
@@ -154,16 +156,17 @@ body{
    margin: auto;
    background-color: rgb(32, 32, 32);
    display: flex;
-   justify-content: center;
+   justify-content: space-evenly;
+   align-items: center;
    padding: 20px;
    box-sizing: border-box;
+   border-bottom: 5px solid white;
 }
 .detailbox{
-   padding-bottom: 20px;
+   box-sizing: border-box;
    width: 16%;
-
    color: rgb(255, 255, 255);
-   border-bottom: 1px solid white;
+   
 }
 ul li{
    font-size: 0.3rem;
@@ -183,26 +186,95 @@ ul li{
                               }
 
 /* ========================responsive==================================== */
-@media (max-width : 768px) {
-   .navbar{
-      display: flex;
-      justify-content: center;
-      align-items: center;
+@media (max-width : 1024px ) {
+   .navbar img{
+      width: 120px;
    }
-   .searchbar {
+   .searchbar{
+      width: 32%;
       
    }
-   .searchbar input{
-      width: 20%;
+   .textone{
+      font-size: 0.8rem;
    }
    .container{
-   display: flex;
-   align-items: center;
-   flex-wrap: wrap;
+      flex-wrap: wrap;
    }
+   .insidecontainer{
+      width: 150px;
+   }
+   .contenttitle{
+      font-size: 6px;
+   }
+   .herodiv{
+      height:190px;
+   }
+   .herodiv img{
+      height: 100%;
 
+   }
+   .itemcaption{
+      font-size: 17px;
+   }
+   .itemcontainer{
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+   }
+   .itembox{
+      width: 120px ;
 
-   
+   }
+   .itemtext{
+      font-size: 14px;
+   }
+   .footer{
+      flex-wrap: wrap;
+   }
+    .detailbox{
+       width: 250px;    
+      }
 }
+/* /--------------------------768---------------------/ */
+   @media (max-width : 768px ) {
+      .navbar img{
+      width: 100px;
+   }
+   .searchbar{
+      width: 30%;
+      
+   }
+   .textone{
+      font-size: 0.6rem;
+   }
    
+   
+   
+   .contenttitle{
+      font-size: 4px;
+   }
+   .herodiv{
+      height:190px;
+   }
+  
+   .itemcaption{
+      font-size: 13px;
+   }
+   
+   .itembox{
+      width: 120px ;
 
+   }
+   .itemtext{
+      font-size: 11px;
+   }
+   
+    .detailbox{
+       width: 200px;    
+      }
+
+      }
+@media (max-width : 699px ){
+   .itemcontainer{
+      justify-content:space-evenly ;
+   }
+}
